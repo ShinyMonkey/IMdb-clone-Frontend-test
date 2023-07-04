@@ -1,0 +1,296 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+body{
+    background-color: rgb(0,0,0);
+    margin: 0;
+}
+
+.header{
+    height: 15vh;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 30px;
+    background-color: rgb(18,18,18);
+    margin-bottom: 25px;
+}
+
+.logo{
+    display: flex;
+    width: 18%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo img{
+    width: 75%;
+    height: 61px;
+    border-radius: 2.5rem;
+    max-width: 6rem;
+    max-height: 18rem;
+}
+
+.logo span{
+    color: white;
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-favourites{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.nav-movies{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 30px;    
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo a p:hover{
+    color: rgb(253, 206, 35);
+}
+
+.searchbar{
+    padding: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: rgb(255,255,255);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 4rem;
+    margin-right: 90px;
+}
+
+#search-key{
+    font-size: 1.1rem;
+    padding: 0.6rem;
+    padding-left: 0.1rem;
+    background-color: transparent;
+    width: 80%;
+    height: 0.7rem;
+    border: 0;
+    margin-left: 1rem;
+    margin-right: 0.3rem;
+    
+}
+.searchbar button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.searchbar i{
+    color: rgb(154,154,154);
+}
+
+
+/* main */
+.main{
+    width: 90%;
+    height: 50vh;
+    margin: 0px auto 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.display-movies{
+    width: 70%;
+    height: 75vh;
+    overflow-y: auto;
+}
+
+.movie-header{
+    font: 1.9rem;
+    color: rgb(253, 206, 35);
+    font-weight: 300;
+    margin-left: 69px;
+}
+.favourite-header{
+    font: 1.9rem;
+    color: rgb(253, 206, 35);
+    font-weight: 300;
+    margin-left: 20px;
+}
+.display-movies::-webkit-scrollbar {
+    display: none;
+}
+ul{
+    width: 100%;
+}
+
+.list-container{
+    min-width: 100px;
+    width: 220px;
+    background-color:rgb(26,26,26);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.display-movies li{
+    display: inline-block;
+     margin-left: 25px;
+     margin-bottom: 20px;
+}
+
+.image-link{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(26,26,26);
+    margin-bottom: 9px;
+}
+
+.image-link img{
+    width: 100%;
+    height: 100%;
+}
+
+#favourites-list a{
+    text-decoration: none;
+    color: white;
+}
+
+.name-favourite-button{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    overflow: hidden;
+    background-color: rgb(26,26,26);
+    font-weight: bold;
+    color: white;
+}
+
+.card-body{
+    padding: 3px;
+}
+.card-title {
+    font-size: medium;
+    font-weight: 500;
+  }
+
+.card-title a {
+    text-decoration: none;
+    color:  #fff;
+  }
+
+.card-title a:hover {
+    text-decoration: underline;
+  }
+
+.card-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+
+.fa-star {
+    color: rgb(253, 206, 35);
+  }
+  
+.text-decoration {
+    text-decoration: none;
+  }
+  
+#rating {
+    color: #fff;
+    font-size: small;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+  }
+  
+.fav-btn {
+    border: transparent;
+    background-color: transparent;
+    text-align: center;
+  }
+  
+.fa-heart {
+    color: rgb(207, 194, 194);
+  }
+  
+.fa-heart:hover {
+    color:  #ec0638;
+  }
+  
+
+  /* FAVOURITE LIST */
+.favourites-list-container{
+    width: 30%;
+    margin-left: 10px;
+    overflow-y: hidden;
+    background-color:rgb(28,27,27) ;
+}
+
+.movie-list{
+    margin-left: 0px;
+}
+.fav-movie-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 2px 2px 0;
+}
+
+.fav-movie-card{
+    padding-right: 1rem;
+    width: 95%;
+    background-color: rgb(12,11,11);
+    overflow: hidden;
+}
+
+.fav-movie-poster {
+    width: 80px;
+    height: 100px;
+  }
+
+  .movie-name {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .movie-name:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .movie-card-details {
+    width: 60%;
+  }
+  
+  .delete-btn {
+    cursor: pointer;
+  }
+  
+  .fa-trash-can {
+    color: rgb(179,52,59);
+    font-size: 1.3rem;
+  }
+  
+  .fa-trash-can:hover {
+    color: #ec0638;
+  }

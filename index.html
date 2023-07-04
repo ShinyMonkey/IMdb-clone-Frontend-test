@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d6d2c07421.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>IMDB clone</title>
+</head>
+<body>
+
+    <header class="header">
+        <!--Navigation Bar-->
+        <div class="logo">
+            <!-- Logo // Moives_Link// Favourites_link -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg" alt="logo">
+                    <span>demo</span>
+        </div>
+        <div class="search-bar">
+            <!-- Search bar to Browse movies -->
+            <form class="searchbar">
+                <input type="text" id="search-key" placeholder="Find Movies" name="search">
+                <button type="submit" class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+    </header>
+
+
+    <div class="main">
+        <div class="display-movies">
+          <!-- list for the movies searched -->
+            <h2 class="movie-header"><span><i class="fa-solid fa-grip-lines-vertical" style="color: #f6e637;"></i></span> Movies</h2>
+            <ul id="movie-list">
+              
+                
+            </ul>
+        </div>
+
+        <!-- list for thse favorite movies -->
+        <div class="favourites-list-container">
+            <h2 class="favourite-header"><span><i class="fa-solid fa-thumbs-up" style="color: #ebee3f;"></i></span> Favourites</h2>
+
+            <ul id="favourites-list">
+              
+                
+            </ul>
+        </div>
+        
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

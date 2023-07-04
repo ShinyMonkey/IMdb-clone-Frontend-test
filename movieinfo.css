@@ -1,0 +1,138 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+body{
+    background-color: rgb(86,49,53);
+    margin: 0;
+}
+
+.header{
+    height: 15vh;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 30px;
+    background-color: rgb(18,18,18);
+    margin-bottom: 25px;
+}
+
+.logo{
+    display: flex;
+    width: 100;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img{
+    width: 75%;
+    height: 61px;
+    border-radius: 2.5rem;
+    max-width: 6rem;
+    max-height: 18rem;
+}
+
+.logo span{
+    color: white;
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-movies{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 30px;   
+}
+
+.home a{
+    text-decoration: none;
+}
+
+.nav-movies:hover{
+    color: rgb(253, 206, 35);
+}
+
+header{
+    margin-bottom: 20px;
+}
+.main{
+    width: 90%;
+    margin: auto;
+    padding: 25px;
+}
+.title-rating-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0 200px;
+}
+
+#rating{
+    color: rgb(255,255,255);
+}
+
+
+.info-container{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 50vh;
+    background-color: transparent;
+    margin: auto;
+}
+
+.poster-container{
+    width: 40%;
+    height: inherit;
+}
+
+.poster-container img{
+    width: 100%;
+    height: inherit;
+}
+
+.info{
+    width: 60%;
+    padding: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.info-container{
+    font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.info-title{
+    font-size: large;
+    margin-bottom: 0;
+}
+
+.info-type{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.details{
+    font-weight: 500;
+    font-size: 0.9em;
+}
